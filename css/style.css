@@ -1,0 +1,89 @@
+/* ini CSS */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-icon {
+  height: 70px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/logo-sinergi.png);
+}
+
+nav {
+  display: flex;
+  margin: 10px 0;
+}
+
+nav>a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 153, 0);
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: tahoma;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.photo-banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-1 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-2 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-3 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.article {
+  height: 300px;
+}
+
+.profile-photo {
+  width: 60%;
+  height: 100%
+}
+
+.product-photo {
+  height: 50%
+}
+
+
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#result {
+  margin: 0px;
+}
+
+footer>div {
+  text-align: center;
+  font-size: small;
+  font-family: tahoma;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-header, nav {
+    flex-direction: column;
+  }
+}

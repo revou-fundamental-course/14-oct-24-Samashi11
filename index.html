@@ -4,6 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Logo icon & Navigasi bar -->
+    <header class="main-header">
+      <!-- Logo -->
+      <div class="logo-icon"></div>
+
+      <!-- Navigasi -->
+      <nav>
+        <a href="#section-home">Home</a>
+        <a href="#section-profile">Profile</a>
+        <a href="#section-product">Product</a>
+        <a href="#section-message-us">Message Us</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- Konten-->
+    <main>
+      <!-- Section Home -->
+      <section id="section-home">
+        <header>
+          <h1>Hi <span id="name">Customer</span>, Welcome to Lapakin</h1>
+        </header>
+
+        <article>
+          <!-- Photo Banner -->
+          <div class="photo-banner">
+            <img src=assets/slide1.webp class="photo-1">
+          </div>
+          <div class="photo-banner">
+            <img src=assets/slide2.webp class="photo-2">
+          </div>
+          <div class="photo-banner">
+            <img src=assets/slide3.webp class="photo-3">
+          </div>
+        </article>
+
+        <button type="button" onclick="nextSlide(-1)">Prev</button>
+        <button type="button" onclick="nextSlide(1)">Next</button>
+      </section>
+
+      <hr />
+
+      <!-- Section Profile -->
+      <section id="section-profile">
+        <header>
+          <h1>Profile</h1>
+        </header>
+
+        <article>
+          <div class="article">
+            <img src=assets/lapak.png class="profile-photo">
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- Section Product -->
+      <section id="section-product">
+        <header>
+          <h1>Product</h1>
+        </header>
+
+        <article>
+          <div class="article">
+            <img src=assets/hmp.png class="product-photo"> <img
+            src=assets/js.jpg class="product-photo"> <img src=assets/spt.webp
+            class="product-photo"> <img src=assets/spd.webp
+            class="product-photo">
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- Section Message Us -->
+      <section id="section-message-us">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <div class="message-container">
+          <form>
+            <div>
+              <label for="input-username">Username:</label>
+              <input id="input-username" type="text" />
+            </div>
+            <button type="button" onclick="validateForm()">Submit</button>
+          </form>
+
+          <div>
+            <p>Result: <span id="result"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Copyright -->
+    <footer>
+      <div>@Copyright Samashi2024</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
